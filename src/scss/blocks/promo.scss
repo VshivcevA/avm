@@ -1,0 +1,34 @@
+.promo {
+  min-height: 500px;
+  background-image: url('../img/bg1.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    color:$white;
+    & h2 {
+      font-size:50px
+    }
+    & p {
+      font-size:30px
+    }
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-around;
+    & button {
+      width: 30%;
+      padding: 20px;
+      background-color:tomato;
+      border: none;
+      border-radius: 8px;
+      opacity: 0.8;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
