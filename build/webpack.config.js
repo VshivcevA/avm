@@ -19,7 +19,7 @@ module.exports = {
     filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
     publicPath: "auto",
-    // clean: true,
+    clean: true,
   },
   module: {
     rules: [
@@ -86,5 +86,17 @@ module.exports = {
       template: `${PATHS.src}/index.html`,
       filename: "./index.html"
     }),
+    new HtmlWebpackPlugin({
+      template: `${PATHS.src}/education.html`,
+      filename: "./education.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: `${PATHS.src}/equipment.html`,
+      filename: "./equipment.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: `${PATHS.src}/dive-center.html`,
+      filename: "./dive-center.html"
+    })
   ],
 }
