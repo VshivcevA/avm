@@ -16,9 +16,9 @@
     height:100%;
     box-sizing: border-box;
     padding:20px;
-    color: red;
+    color: $secondary;
     &:hover {
-      border-bottom: 5px $primary solid;
+      border-bottom: 5px $secondary solid;
     }
   }
 }
