@@ -6,6 +6,75 @@
   <title>template</title>
 </head>
 <body class="body">
-  <h1>template</h1>
+  <header class="header">
+    <nav class="header__nav nav container">
+      <div class="header__logo">
+        <img class="header__img" src="./img/logo.svg" alt="" width="100" height="100">
+        <h1 class="header__title">
+          avm-learn - best learn site
+        </h1>
+      </div>
+
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="blank.html">
+            Courses
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="./blank.html">
+            Advanced
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+            Travel
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+            Shop
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="promo">
+      <div class="promo__title">
+        <h2>
+          Main Title
+        </h2>
+        <p>
+          title description
+          title description
+          title description
+        </p>
+        <div class="promo__buttons">
+          <button type="button">
+            button
+          </button>
+          <button type="button">
+            button
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="js-results">
+        <input type="text" id="search" placeholder="Поиск по заголовоку">
+        <button id="search-button">Найти</button>
+      </div>
+      <ul class="card-list"></ul>
+    </section>
+  </main>
 </body>
+<template id="template">
+    <li class="card">
+      <img class="card__img" alt="" width="400px" height="400px"/>
+      <h2 class="card__title"></h2>
+      <p class="card__text"></p>
+      <button class="card__button">more button</button>
+    </li>
+</template>
 </html>

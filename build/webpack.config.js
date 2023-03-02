@@ -19,7 +19,7 @@ module.exports = {
     filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
     publicPath: "auto",
-    clean: true,
+    // clean: true,
   },
   module: {
     rules: [
@@ -30,10 +30,14 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
-        type: 'asset',
+        type: 'asset/resource',
         generator: {
           filename: `${PATHS.assets}img/[name][ext]`
         }
+      },
+      {
+        test: /\.html$/,
+        use: 'html-loader'
       },
       {
         test: /\.scss$/i,
@@ -70,6 +74,10 @@ module.exports = {
         {
           from:`${PATHS.src}/static`,
           to:''
+        },
+        {
+          from:`${PATHS.src}/img`,
+          to:`${PATHS.assets}/img`
         },
       ]
     }),
